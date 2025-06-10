@@ -1,8 +1,5 @@
 module.exports = function(eleventyConfig) {
-  // Dodajemy filtr
-  eleventyConfig.addFilter("uppercase", function(value) {
-    return value.toUpperCase();
-  });
+  
   eleventyConfig.addPassthroughCopy("src/assets");
 
   // Ustawiamy foldery
