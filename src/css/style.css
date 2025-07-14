@@ -10,6 +10,7 @@
 body {
     font-family: Inter;
     font-size: 17px;
+    line-height: 1.6;
     background-color: var(--bg);
     color: var(--text);
     margin: 0;
@@ -25,6 +26,22 @@ a {
     display: flex;
     margin: 0 auto;
     padding: 2.5rem 4rem;
+    position: relative;
+}
+.col-6 {
+    width: 50%;
+}
+.col-4 {
+    width: calc(100%/3);
+}
+.col-3 {
+    width: 25%;
+}
+.col-2 {
+    width: calc(100%/6);
+}
+.col-1 {
+    width: calc(100%/12);
 }
 header {
     color: var(--text);
@@ -53,10 +70,66 @@ header {
     list-style: none;
 }
 #particles {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 3;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.hero-name {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.primaryButton {
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.8em 1.8em;
+    background: var(--primary);
+    color: var(--text);
+    position: relative;
+    overflow: visible;
+}
+.primaryButton span {
+    position: relative;
+    z-index: 1;
+}
+.primaryButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.primaryButton::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    transition: height 0.3s;
+    background: var(--text);
+}
+.primaryButton:hover span {
+    color: var(--primary)!important;
+}
+.primaryButton:hover::after {
+    height: 100%;
+}
+.cta-hero {
+    display: flex;
+    gap: 50px;
+}
+.contact-hero {
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.content-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }

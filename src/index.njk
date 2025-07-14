@@ -2,19 +2,32 @@
 title: Hello World!
 layout: base.njk
 ---
-<div>
-    <div style="position: relative;">
-        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-            <div id="particles"></div>
+<section style="position: relative;">
+    <div id="particles"></div>
+    <div class="container">
+        <di class="col-6 content-hero">
+            <h1 class="hero-name">
+                <span style="font-size: 32px;">Oliwier</span>
+                <span style="color: var(--primary); font-size: 48px;">Rejniak</span>
+                <span style="font-size: 24px; font-weight: 300;">Web Developer</span>
+            </h1>
+            <div class="cta-hero">
+                <a href="/realizacje" class="primaryButton"><span>Realizacje</span></a>
+                <a href="/kontakt" class="primaryButton"><span>Kontakt</span></a>
+            </div>
+            <div class="contact-hero">
+                <a href="mailto:kontakt@oliwierrejniak.pl"><i class="fa-solid fa-envelope"></i>&nbsp;<span>kontakt@oliwierrejniak.pl</span></a>
+                <span>|</span>
+                <a href="tel:+48511258112"><span><i class="fa-solid fa-phone"></i>&nbsp;511 258 112</span></a>
+                <span>|</span>
+                <a href="https://github.com/oliwierrejniak" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;<span>oliwierrejniak</span></a>
+                <span>|</span>
+                <a href=""><i class="fa-brands fa-linkedin"></i>&nbsp;<span>Oliwier Rejniak</span></a>
+            </div>
         </div>
-        <h1 style="display: flex; flex-direction: column;">
-            <span style="font-size: 32px;">Oliwier</span>
-            <span style="color: var(--primary); font-size: 48px;">Rejniak</span>
-            <span style="font-size: 24px; font-weight: 300;">Web Developer</span>
-        </h1>
+        
+        <div class="col-6"></div>
     </div>
-    
-    <div></div>
-</div>
+</section>
 <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
 <script src="/js/particles.js"></script>

@@ -27,4 +27,6 @@ const options = {
       opacity: { value: 0.3}
     }
 }
-tsParticles.load("particles", options)
+document.addEventListener("DOMContentLoaded", () => {
+  tsParticles.load("particles", options);
+});
