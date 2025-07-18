@@ -22,7 +22,9 @@
   "description": "",
   "type": "module",
   "dependencies": {
+    "'": "file:awesome.me/kit-eafd192b53@latest'",
     "@11ty/eleventy": "^3.1.2",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {

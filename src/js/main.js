@@ -1,4 +1,4 @@
-
+//18.07 configuration of tsParticles on hero section home by Oliwier Rejniak
 import { tsParticles } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 
@@ -35,3 +35,5 @@ const options = {
 loadSlim(tsParticles).then(() => {
   tsParticles.load("particles", options);
 });
+//18.07 import Font Awesome package by Oliwier Rejniak
+import '@fortawesome/fontawesome-free/css/all.min.css';
