@@ -27,12 +27,23 @@ a {
     margin: 0 auto;
     padding: 2.5rem 4rem;
     position: relative;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col-12 {
+    width: 100%;
 }
 .col-6 {
     width: 50%;
 }
 .col-4 {
     width: calc(100%/3);
+}
+.col-8 {
+    width: calc(100%/1.5);
 }
 .col-3 {
     width: 25%;
@@ -131,5 +142,18 @@ header {
 .content-hero {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+}
+.smallSep {
+    height: 1.5rem;
+}
+.horizontalWrapper {
+    display: flex;
+    flex-direction: row;
+}
+.wrapperCentered {
+    justify-content: center;
+    gap: 50px;
+}
+.aboutMe {
+    background-color: var(--alt-bg);
 }
