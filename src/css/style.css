@@ -7,6 +7,15 @@
     --alt-bg: #1e1f22;
     --text: #F5F4F6;
 }
+h1 {
+    font-size: 50px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 28px;
+}
 body {
     font-family: Inter;
     font-size: 17px;
@@ -22,16 +31,18 @@ a {
     text-decoration: none;
 }
 .container {
-    width: 1400px;
+    width: 1440px;
     display: flex;
     margin: 0 auto;
     padding: 2.5rem 4rem;
     position: relative;
     flex-direction: column;
+    gap: 40px;
 }
 .row {
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 .col-12 {
     width: 100%;
@@ -156,4 +167,31 @@ header {
 }
 .aboutMe {
     background-color: var(--alt-bg);
+}
+.imageContainer {
+    position: relative;
+    height: 500px;
+}
+.showFromTop {
+	animation-name: showFromTop;
+    animation-delay: 0.5s;
+    animation-play-state: paused;
+}
+.animationRunning {
+    animation-play-state: running;
+}
+.animated {
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    animation-fill-mode: both;
+}
+@keyframes showFromTop {
+	0% {
+		transform: translateY(-5rem);
+        opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+        opacity: 1;
+	}
 }
