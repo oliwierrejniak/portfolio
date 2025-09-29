@@ -3,7 +3,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "assets/css": "assets" });
   return {
     dir: {
-      input: "pages",
+      input: "/",
       output: "dist",
       includes: "includes",
       layouts: "layouts"
