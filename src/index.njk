@@ -89,12 +89,14 @@ layout: base.njk
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 alignContent">
                 <h2>Dlaczego ja?</h2>
                 <div class="smallSep"></div>
-                <div>
-                    <button>Front-End</button>
-                    <button>Web Development</button>
+                <div class="whyMeRadioContainer">
+                    <input type="radio" name="whyMe" id="whyMeFrontEnd" class="whyMeRadio">
+                    <label class="whyMeRadioLabel" for="whyMeFrontEnd">Front-End</label>
+                    <input type="radio" name="whyMe" id="whyMeWebDevelopment" class="whyMeRadio">
+                    <label class="whyMeRadioLabel" for="whyMeWebDevelopment">Web Development</label>
                 </div>
             </div>
         </div>
