@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx @11ty/eleventy --serve",
-    "build": "vite build && npx @11ty/eleventy",
+    "build": "npx @11ty/eleventy --serve",
     "dev": "eleventy --serve"
   },
   "repository": {
