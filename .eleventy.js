@@ -8,7 +8,7 @@ eleventyConfig.addPlugin(EleventyVitePlugin, {
     viteOptions: {
       root: ".11ty-vite",
       build: {
-        outDir: "../_site",
+        outDir: "../dist",
         emptyOutDir: true,
       },
       server: {
