@@ -1,13 +1,14 @@
 export default function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ "assets/media": "assets" });
-  eleventyConfig.addPassthroughCopy({ "assets/css": "assets" });
+  eleventyConfig.addPassthroughCopy({ "dist": "assets" });
+
   return {
     dir: {
-      input: "/",
-      output: "dist",
+      input: "content",
+      output: "src",
       includes: "includes",
       layouts: "layouts"
     },
-    htmlTemplateEngine: "njk"
+    htmlTemplateEngine: "njk",
+    passthroughFileCopy: true
   };
-};
+}

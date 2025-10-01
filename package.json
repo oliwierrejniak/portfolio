@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx @11ty/eleventy && npx vite",
-    "build": "npx vite && npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy && npx vite build",
+    "test": "npx serve _site",
+    "dev": "concurrently \"npx @11ty/eleventy --serve\" \"vite\""
   },
   "repository": {
     "type": "git",
@@ -21,13 +21,13 @@
   "description": "",
   "type": "module",
   "dependencies": {
-    "'": "file:awesome.me/kit-eafd192b53@latest'",
     "@11ty/eleventy": "^3.1.2",
-    "@fortawesome/fontawesome-free": "^6.7.2",
+    "@fortawesome/fontawesome-free": "^7.0.1",
     "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
-    "@11ty/eleventy-plugin-vite": "^6.0.0-alpha.4",
-    "vite": "^7.0.5"
+    "concurrently": "^9.2.1",
+    "vite": "^7.0.5",
+    "vite-plugin-static-copy": "^3.1.3"
   }
 }
