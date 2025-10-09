@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy && npx vite build",
-    "test": "npx serve _site",
     "dev": "concurrently \"npx @11ty/eleventy --serve\" \"vite\""
   },
   "repository": {
@@ -23,6 +22,8 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@fortawesome/fontawesome-free": "^7.0.1",
+    "node-path": "^0.0.3",
+    "node.url": "^1.0.8",
     "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {
