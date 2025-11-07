@@ -7,7 +7,7 @@ import path from 'path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
-const postsDir = path.resolve(__dirname, 'src/posts')
+const postsDir = path.resolve(__dirname, 'src/projekty')
 
 let postFiles = {};
 if (fs.existsSync(postsDir)) {
