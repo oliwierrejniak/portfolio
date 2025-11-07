@@ -1,0 +1,55 @@
+---
+---
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="/js/main.js"></script>
+</head>
+<body>
+    {% include "header.njk" %}
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>{{ title }}</h1>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <p>{{ content | safe}}</p>
+                        </div>
+                        <div class="col-6">
+                            <img src="/media/{{ thumbnailSource }}">
+                            <div class="smallSep"></div>
+                            <ul>
+                                <li>Kategoria: {{  categories  }}</li>
+                                <li>Technologia: {{  technologies  }}</li>
+                                <li>Link: {{  ref | safe}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Galeria</h2>
+                            <div class="smallSep"></div>
+                            <script type="module" src="/js/postGallery.js"></script>
+                            <div class="postGalleryContainer" data-images="{{  images  }}"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+    </main>
+    {% include "footer.njk" %}
+</body>
+</html>

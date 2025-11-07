@@ -36,15 +36,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
     
   });
 });
-//8.10 smooth scroll to ID's
-/*document.addEventListener('DOMContentLoaded', (event) => {
-  document.getElementsByTagName('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+/*8.10 swithcing projects by display none and block*/
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    })
-  })
-})*/
+document.addEventListener('DOMContentLoaded', (event) => {
+  const radios = document.querySelectorAll('input[name="whyMe"]');
+
+  const frontEndContainer = document.querySelector('.frontEndContainer');
+  const webDevelopmentContainer = document.querySelector('.webDevelopmentContainer');
+  function updateView() {
+    if (frontEndContainer) frontEndContainer.style.display = 'none';
+    if (webDevelopmentContainer) webDevelopmentContainer.style.display = 'none';
+
+    const checked = document.querySelector('input[name="whyMe"]:checked');
+    if (!checked) return;
+
+    if (checked.id === 'whyMeFrontEnd' || checked.value === 'frontEnd') {
+      if (frontEndContainer) frontEndContainer.style.display = 'block';
+    } else if (checked.id === 'whyMeWebDevelopment' || checked.value === 'webDevelopment') {
+      if (webDevelopmentContainer) webDevelopmentContainer.style.display = 'block';
+    }
+  }
+  updateView();
+  radios.forEach(r => r.addEventListener('change', updateView));
+})
+

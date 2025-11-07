@@ -22,8 +22,11 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@fortawesome/fontawesome-free": "^7.0.1",
+    "fs": "^0.0.1-security",
     "node-path": "^0.0.3",
     "node.url": "^1.0.8",
+    "path": "^0.12.7",
+    "photoswipe": "^5.4.4",
     "tsparticles-slim": "^2.12.0"
   },
   "devDependencies": {

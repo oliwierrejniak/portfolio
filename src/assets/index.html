@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strona główna</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon-CktuttNL.ico">
-  <script type="module" crossorigin src="/assets/main-BtDy9jaV.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/main-D42tgqy4.css">
-  <link rel="stylesheet" crossorigin href="/assets/main-4y8wnmwE.css">
+  <script type="module" crossorigin src="/assets/main-BfGdh-qd.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/main-D0y1Ou2o.js">
+  <link rel="stylesheet" crossorigin href="/assets/main-DmIR8rWU.css">
 </head>
 <body>
     <main>
@@ -16,8 +16,10 @@
         <div class="row">
             <div class="subheaderLeft">
                 <div class="headerNameContainer">
-                    <span class="headerName">Oliwier</span>
-                    <span class="headerSurname">Rejniak</span>
+                    <a href="http://localhost:5173">
+                        <span class="headerName">Oliwier</span>
+                        <span class="headerSurname">Rejniak</span>
+                    </a>
                 </div>
             </div>
             <div class="subheaderRight">
@@ -27,14 +29,13 @@
                         <li><a href="projekty">Projekty</a></li>
                         <li><a href="doswiadczenie">Doświadczeznie</a></li>
                         <li><a href="oferta">Oferta</a></li>
-                        <li><a href="kontakt">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-</header>
-        <section style="position: relative;">
+</header>
+<section style="position: relative;">
     <div id="particles"></div>
     <div class="container">
         <div class="row">
@@ -47,13 +48,13 @@
                 <div class="smallSep"></div>
                 <div class="cta-hero">
                     <a href="/realizacje" class="primaryButton"><span>Realizacje</span></a>
-                    <a href="/kontakt" class="primaryButton"><span>Kontakt</span></a>
+                    <a href="/#kontakt" class="primaryButton"><span>Kontakt</span></a>
                 </div>
                 <div class="smallSep"></div>
                 <div class="contact-hero">
                     <a href="mailto:kontakt@oliwierrejniak.pl"><i class="fa-solid fa-envelope"></i>&nbsp;<span>kontakt@oliwierrejniak.pl</span></a>
                     <span>|</span>
-                    <a href="tel:+48511258112"><span><i class="fa-solid fa-phone"></i>&nbsp;511 258 112</span></a>
+                    <a href="tel:+48511258112"><i class="fa-solid fa-phone"></i>&nbsp;<span>511 258 112</span></a>
                     <span>|</span>
                     <a href="https://github.com/oliwierrejniak" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;<span>oliwierrejniak</span></a>
                     <span>|</span>
@@ -95,9 +96,9 @@
         <div class="row">
             <div class="col-6">
                 <div class="imageContainer">
-                    <img data-src="media/przystanek-sila.png" style="position: absolute; z-index: 1; width: 600px; height: auto; top: 0px; left: 100px;">
-                    <img data-src="media/mikolajczyk-stanska.png" style="position: absolute; z-index: 2; width: 500px; height: auto; top: 200px; left: 0px;">
-                    <img data-src="media/trece.png" style="position: absolute; z-index: 3; width: 400px; height: auto; top: 300px; right: 0px;">
+                    <img data-src="/media/przystanek-sila.png" style="position: absolute; z-index: 1; width: 600px; height: auto; top: 0px; left: 100px;">
+                    <img data-src="/media/mikolajczyk-stanska.png" style="position: absolute; z-index: 2; width: 500px; height: auto; top: 200px; left: 0px;">
+                    <img data-src="/media/trece.png" style="position: absolute; z-index: 3; width: 400px; height: auto; top: 300px; right: 0px;">
                 </div>
                 <div class="smallSep"></div>
                 <h3 style="text-align: center;">Projektowanie stron internetowych</h3>
@@ -106,9 +107,9 @@
             </div>
             <div class="col-6">
                 <div class="imageContainer">
-                    <img data-src="media/zgadywanka.png" style="position: absolute; z-index: 1; width: 600px; height: auto; top: 0px; left: 100px;">
-                    <img data-src="media/to-do-list.png" style="position: absolute; z-index: 2; width: 500px; height: auto; top: 200px; left: 0px;">
-                    <img data-src="media/quiz.png" style="position: absolute; z-index: 3; width: 400px; height: auto; top: 300px; right: 0px;">
+                    <img data-src="/media/zgadywanka.png" style="position: absolute; z-index: 1; width: 600px; height: auto; top: 0px; left: 100px;">
+                    <img data-src="/media/to-do-list.png" style="position: absolute; z-index: 2; width: 500px; height: auto; top: 200px; left: 0px;">
+                    <img data-src="/media/quiz.png" style="position: absolute; z-index: 3; width: 400px; height: auto; top: 300px; right: 0px;">
                 </div>
                 <div class="smallSep"></div>
                 <h3 style="text-align: center;">Front-end development</h3>
@@ -130,15 +131,47 @@
                     <input type="radio" name="whyMe" id="whyMeWebDevelopment" class="whyMeRadio">
                     <label class="whyMeRadioLabel" for="whyMeWebDevelopment">Web Development</label>
                 </div>
+                <div class="smallSep"></div>
+                <div class="frontEndContainer">
+                    frontendjuhu
+                </div>
+                <div class="webDevelopmentContainer">
+                    webdevjuhu
+                </div>
             </div>
         </div>
     </div>
 </section>
-<section>
-    
-</section>
         <footer>
-    <div>Test footera</div>
+    <div class="container footerContainer">
+        <div class="row rowCenter">
+            <div class="col-4">
+                <a href="http://localhost:5173/"><img class="footerImage" src="/assets/Logo-Bo3h_rUK.png"></a>
+            </div>
+            <div class="col-4">
+                <span class="footerHeader">Nawigacja</span>
+                <div class="smallSep"></div>
+                <div class="footerColumnContainer">
+                    <a href="/o-mnie">O mnie</a>
+                    <a href="/projekty">Projekty</a>
+                    <a href="/doswiadczenie">Doświadczenie</a>
+                    <a href="/oferta">Oferta</a>
+                    <a href="/kontakt">Kontakt</a>
+                </div>
+            </div>
+            <div class="col-4">
+                <span class="footerHeader">Kontakt</span>
+                <div class="smallSep"></div>
+                <div class="footerColumnContainer footerMenu" id="kontakt">
+                    <a href="mailto:kontakt@oliwierrejniak.pl"><i class="fa-solid fa-envelope footerIcons"></i>&nbsp;<span>kontakt@oliwierrejniak.pl</span></a>
+                    <a href="tel:+48511258112"><i class="fa-solid fa-phone footerIcons"></i>&nbsp;<span>511 258 112</span></a>
+                    <a href="https://github.com/oliwierrejniak" target="_blank"><i class="fa-brands fa-github footerIcons"></i>&nbsp;<span>oliwierrejniak</span></a>
+                    <a href=""><i class="fa-brands fa-linkedin footerIcons"></i>&nbsp;<span>Oliwier Rejniak</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerAuthor">Stronę opracował <a href="http://localhost:5173/">Oliwier Rejniak</a></div>
 </footer>
     </main>
 </body>
